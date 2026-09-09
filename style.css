@@ -1,0 +1,151 @@
+:root {
+    --bg-color: #0d0f12;
+    --card-bg: #161a22;
+    --card-border: #2c3340;
+    --gold: #d4af37;
+    --gold-light: #f5d77f;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Lora', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.hero {
+    text-align: center;
+    padding: 70px 0 40px;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.hero .subtitle {
+    font-family: var(--font-heading);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--gold);
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    color: #fff;
+    margin: 14px 0;
+    font-weight: 700;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Seções */
+.stage {
+    margin: 50px 0;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(212, 175, 55, 0.12);
+    color: var(--gold-light);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--gold);
+    margin-bottom: 10px;
+}
+
+.stage h2 {
+    font-family: var(--font-heading);
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.stage-desc {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+/* Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+}
+
+.card.highlight {
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.step-num {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgba(212, 175, 55, 0.25);
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    color: var(--gold-light);
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.card .tagline {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #c9d1d9;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
