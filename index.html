@@ -20,6 +20,16 @@
     </div>
 </header>
 
+<!-- Barra de Filtros por Era -->
+<nav class="filter-wrapper container">
+    <span class="filter-label">Filtrar por Era:</span>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all" type="button">Todas as Obras</button>
+        <button class="filter-btn" data-filter="primeira-era" type="button">Primeira Era / Origens</button>
+        <button class="filter-btn" data-filter="terceira-era" type="button">Terceira Era</button>
+    </div>
+</nav>
+
 <main class="container">
     <section class="stage">
         <div class="badge">Passo 1</div>
@@ -27,7 +37,7 @@
         <p class="stage-desc">Comece pela experiência clássica e fluida antes de mergulhar na mitologia densa.</p>
 
         <div class="grid">
-            <article class="card" data-book-id="hobbit">
+            <article class="card" data-book-id="hobbit" data-era="terceira-era">
                 <img src="assets/images/hobbit.jpg" alt="Capa do livro O Hobbit" class="book-cover">
                 <div class="step-num">01</div>
                 <h3>O Hobbit</h3>
@@ -39,7 +49,7 @@
                 </div>
             </article>
 
-            <article class="card highlight" data-book-id="lotr">
+            <article class="card highlight" data-book-id="lotr" data-era="terceira-era">
                 <img src="assets/images/lotr.jpg" alt="Capa do livro O Senhor dos Anéis" class="book-cover">
                 <div class="step-num">02</div>
                 <h3>O Senhor dos Anéis</h3>
@@ -59,7 +69,7 @@
         <p class="stage-desc">Para quem terminou O Senhor dos Anéis e quer entender como o mundo foi criado.</p>
 
         <div class="grid single">
-            <article class="card myth" data-book-id="silmarillion">
+            <article class="card myth" data-book-id="silmarillion" data-era="primeira-era">
                 <img src="assets/images/silmarillion.jpg" alt="Capa do livro O Silmarillion" class="book-cover">
                 <div class="step-num">03</div>
                 <h3>O Silmarillion</h3>
@@ -79,7 +89,7 @@
         <p class="stage-desc">Histórias expandidas da Primeira Era que foram resumidas no Silmarillion.</p>
 
         <div class="grid">
-            <article class="card" data-book-id="hurin">
+            <article class="card" data-book-id="hurin" data-era="primeira-era">
                 <h3>Os Filhos de Húrin</h3>
                 <p class="tagline">A grande tragédia</p>
                 <p>A mais madura, sombria e trágica narrativa de Tolkien, focada na maldição lançada sobre Túrin Turambar.</p>
@@ -89,7 +99,7 @@
                 </div>
             </article>
 
-            <article class="card" data-book-id="beren-luthien">
+            <article class="card" data-book-id="beren-luthien" data-era="primeira-era">
                 <h3>Beren e Lúthien</h3>
                 <p class="tagline">Amor imortal</p>
                 <p>O conto fundamental da relação entre um homem mortal e uma donzela elfa, central em toda a mitologia.</p>
@@ -99,7 +109,7 @@
                 </div>
             </article>
 
-            <article class="card" data-book-id="gondolin">
+            <article class="card" data-book-id="gondolin" data-era="primeira-era">
                 <h3>A Queda de Gondolin</h3>
                 <p class="tagline">A queda da cidade oculta</p>
                 <p>A narrativa militar e trágica do último refúgio dos Elfos contra o poder avassalador de Morgoth.</p>

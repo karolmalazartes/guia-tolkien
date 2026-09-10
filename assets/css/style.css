@@ -227,3 +227,63 @@ footer {
     border-color: #2ea043;
     color: #3fb950;
 }
+
+/* Filtros de Eras */
+.filter-wrapper {
+    margin: 35px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-label {
+    font-family: var(--font-heading), 'Times New Roman', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    font-family: var(--font-heading), 'Times New Roman', serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+}
+
+.filter-btn.active {
+    background-color: var(--gold);
+    color: #0d0f12;
+    border-color: var(--gold);
+    font-weight: 700;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+/* Ocultação de cards e seções vazias */
+.card.is-hidden {
+    display: none !important;
+}
+
+.stage.is-hidden {
+    display: none !important;
+}
